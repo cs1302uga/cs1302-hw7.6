@@ -32,7 +32,7 @@ command depends on your present working directory), then please note that contex
 
 ### Getting Started
 
-1. Use Git to clone the repository for this exercise onto Odin into a subdirectory called `cs1302-ce20`:
+1. Use Git to clone the repository for this exercise onto Odin into a subdirectory called `cs1302-hw7.6`:
 
    ```
    $ git clone --depth 1 https://github.com/cs1302uga/cs1302-hw7.6.git
@@ -42,19 +42,11 @@ command depends on your present working directory), then please note that contex
 
 ### Checkpoint 1 Steps
 
-1. Copy over your work from the `src/cs1302/ce19` directory of `cs1302-ce19`
-   into the `src/cs1302/ce20` directory of `cs1302-ce20` and update the package
-   statements accordingly (i.e., make sure the package is `cs1302.ce20`). 
-   **You should create `src/cs1302/ce20` if it does not exist.**
+1. Execute `tree src` from within the `cs1302-hw7.6` directory you just created to see the provided source files. Then, take a few
+   minutes to look through the code and understand what you were given.
    
-1. If you did not finish **cs1302-ce19**, then finish the work required for 
-   [cs1302-ce19](https://github.com/cs1302uga/cs1302-ce19)
-   in the code you just copied over. 
-   
-1. **Compile and run your code without any errors or warnings.**
+1. Compile and run the code using the provided compile script (`compile.sh`).
 
-1. Make sure your code passes the `checkstyle` audit then stage and commit your changes.
-   
 1. Consider the following screenshot and associated containment heirarchy:
 
    <table>
@@ -79,7 +71,7 @@ command depends on your present working directory), then please note that contex
    </table>
    
    Each node corresponds to an object of some class under the 
-   [`javafx`](https://openjfx.io/javadoc/11/)
+   [`javafx`](https://openjfx.io/javadoc/17/)
    package. The diagram for the scene graph assumes that child nodes
    are added to their parents in a left-to-right order.
    Here are some additional notes:
@@ -182,48 +174,6 @@ functionality. Congratulations on a good looking, functional app!
 <hr/>
 
 ![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-2-success?style=for-the-badge)
-
-<hr/>
-
-### Submission Steps
-
-**Each student needs to individually submit their own work.**
-
-1. Create a plain text file called `SUBMISSION.md` directly inside the `cs1302-ce20`
-   directory with the following information.
-
-   1. Your name and UGA ID number;
-   1. Collaborator names, if any; and
-   1. If you created the API website, include the full link to the site you generated.
-   
-   Here is an example of the contents of `SUBMISSION.md`.
-   
-   ```
-   1. Sally Smith (811-000-999)
-   2. Collaborators: Joe Allen, Stacie Mack
-   3. https://webwork.cs.uga.edu/~user/cs1302-ce20-doc
-   ```
-
-1. Change directories to the parent of `cs1302-ce20` (e.g., `cd ..` from `cs1302-ce20`). If you would like
-   to make a backup tar file, the instructions are in the submissions steps for [ce02](https://github.com/cs1302uga/cs1302-ce02).
-   We won't repeat those steps here and you can view them as optional.
-   
-1. Use the `submit` command to submit this exercise to `csci-1302`:
-   
-   ```
-   $ submit cs1302-ce20 csci-1302
-   ```
-   
-   Read the output of the submit command very carefully. If there is an error while submitting, then it will displayed 
-   in that output. Additionally, if successful, the submit command creates a new receipt file in the directory you 
-   submitted. The receipt file begins with rec and contains a detailed list of all files that were successfully submitted. 
-   Look through the contents of the rec file and always remember to keep that file in case there is an issue with your submission.
-
-   **Note:** You must be on Odin to submit.
-
-<hr/>
-
-![CP](https://img.shields.io/badge/Just%20Finished-Submission-success?style=for-the-badge)
 
 <hr/>
 
