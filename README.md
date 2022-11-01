@@ -1,13 +1,13 @@
-# cs1302-ce20 Fancy ImageApp
+# cs1302-hw7.6 Fancy ImageApp
 
-![Approved for: Fall 2020](https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet)
+![Approved for: Fall 2022](https://img.shields.io/badge/Approved%20for-Fall%202022-darkgreen)
 
 > The artist is the creator of beautiful things.
 > **-- Oscar Wilde, _The Picture of Dorian Gray_**
 
 This class exercise continues the development a GUI app using the JavaFX library. Students
 will continue to create an interactive GUI that loads an image from a specified URL and allows
-the user to perform different zooming operations. Construction of this app requires students
+the user to perform different resizing operations. Construction of this app requires students
 to utilize their knowledge of inheritance, polymorphism, interfaces, and API documentation
 lookup.
 
@@ -17,20 +17,9 @@ lookup.
 * **LO7.a:** (Partial) Design and implement a graphical user interface in a software project.
 
 ## References and Prerequisites
-
-* [CSCI 1302 JavaFX Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/javafx/javafx.md)
-* [JavaFX 11 Bookmarks](https://github.com/cs1302uga/cs1302-tutorials/blob/master/javafx/javafx-bookmarks.md)
-* [JavaFX 11 API Documentation](https://openjfx.io/javadoc/11/)
-
-## Introductory Video
-
-The following video contains a brief introduction to the exercise and a demo: 
-
-https://www.youtube.com/watch?v=eMArlI_tjig
-
-<a href="https://www.youtube.com/watch?v=eMArlI_tjig">
-<img src="http://i3.ytimg.com/vi/eMArlI_tjig/hqdefault.jpg" alt="IMAGE ALT TEXT">
-</a>
+* [CSCI 1302 JavaFX Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/javafx/javafx.md)
+* [JavaFX Bookmarks](https://github.com/cs1302uga/cs1302-tutorials/blob/master/javafx/javafx-bookmarks.md)
+* [JavaFX API Documentation](https://openjfx.io/javadoc/17/)
 
 ## Questions
 
@@ -46,7 +35,7 @@ command depends on your present working directory), then please note that contex
 1. Use Git to clone the repository for this exercise onto Odin into a subdirectory called `cs1302-ce20`:
 
    ```
-   $ git clone --depth 1 https://github.com/cs1302uga/cs1302-ce20.git
+   $ git clone --depth 1 https://github.com/cs1302uga/cs1302-hw7.6.git
    ```
 
 ## Exercise Steps
