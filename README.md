@@ -128,7 +128,7 @@ the screenshot provided above. Congratulations on a good looking app!
      * If clicking this button causes the size to increase to an amount such that a 
        subsequent click would cause the `ImageView` size to exceed twice the size of the 
        underlying `Image`, then disable the button. If the second button (i.e., for
-       zooming out) is disabled, then enable it.
+       decreasing size) is disabled, then enable it.
 
    * __Decrease Size (Shrink):__
      The second button (i.e., the one with [`photo_size_shrink.png`](resources/photo_size_shrink.png))
@@ -137,25 +137,25 @@ the screenshot provided above. Congratulations on a good looking app!
      * If clicking this button causes the size to decrease to an amount such that a 
        subsequent click would cause the `ImageView` size to become negative, then 
        disable the button. If the first button (i.e., for
-       zooming in) is disabled, then enable it.
+       increasing size) is disabled, then enable it.
 
    * __Actual Size:__
      The third button (i.e., the one with [`photo_size_actual.png`](resources/photo_size_actual.png))
      should return the main `ImageView` object to its default size. This can be accomplished by changing the size 
      of the `ImageView` object to the same size as the `Image` object it displays. 
      
-     * If either of the other buttons (i.e., for zooming in / zooming out) are disabled, 
+     * If either of the other buttons (i.e., for increasing / decreasing size) are disabled, 
        then enable them.
      
    Recommendations:
    
-   * Instead of writing the zoom in / zoom out logic entirely in separate lambda expressions,
-     write a `private` zoom method that takes your fixed zoom amount as a positive or negative 
+   * Instead of writing the increase / decrease size logic entirely in separate lambda expressions,
+     write a `private` resize method that takes your fixed resize amount as a positive or negative 
      `double` and simply have the lambdas for your event handlers call that method with the
      appropriate value. For example: 
      
      ```java
-     someButton.setOnAction(e -> zoom(+25));
+     someButton.setOnAction(e -> resize(+25));
      ```
      
    * Carefully read the entire API documentation, including default values, for the following 
