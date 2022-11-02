@@ -111,14 +111,18 @@ the screenshot provided above. Congratulations on a good looking app!
 ### Checkpoint 2 Steps
 
 1. Now that you have your app looking good, let's make it do stuff. Add
-   the functionality listed below to your app. You will
-   need to consult the API documentation for the 
+   the functionality listed below to your app. 
+
+   You will need to consult the API documentation for the 
    [`ImageView`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/image/ImageView.html)
    and
-   [`Button`](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/Button.html). We recommend 
-   modifying the `fitHeight` or `fitWidth` property of the `ImageView`. Also, consider setting the `preserveRatio`
-   property as well.
+   [`Button`](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/Button.html). 
    
+   While reading the documentation, carefully consider how the following properties impact an `ImageView`:
+     * [`fitHeight`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/image/ImageView.html#fitHeightProperty)
+     and
+     * [`preserveRatio`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/image/ImageView.html#preserveRatioProperty).
+
    **Please read all of the bullet points below as well as the recommendations before writing any code.**
 
    * __Increase Size (Enlarge):__
@@ -157,14 +161,6 @@ the screenshot provided above. Congratulations on a good looking app!
      ```java
      someButton.setOnAction(e -> resize(+25));
      ```
-     
-   * Carefully read the entire API documentation, including default values, for the following 
-     `ImageView` properties:
-     [`fitHeight`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/image/ImageView.html#fitHeightProperty)
-     and
-     [`preserveRatio`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/image/ImageView.html#preserveRatioProperty).
-     Carefully considering how these properties impact an `ImageView` can lead to more concise
-     and readable code.
    
 1. **Recompile before continuing.**
    Also, make sure your code passes the `checkstyle` audit, then stage and commit all changes.
