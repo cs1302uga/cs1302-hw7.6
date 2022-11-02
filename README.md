@@ -89,10 +89,10 @@ command depends on your present working directory), then please note that contex
    * The icons for the associated images are contained in the `resources` directory 
      provided with this exercise. To use these local files in your `ImageView`, you
      can use a relative `file:` URL, e.g., `file:resources/image.png` -- this will only work
-     if resources is in the present working directory when the app is run.
-          
-<!--   * The stage should NOT be resizable by the user via dragging the window corner. -->
-   
+     if resources is in the present working directory when the app is run. There is an example
+     of this in the `init` method in the starter code. There, we initialize the default image
+     from the `resources` directory.
+             
 1. Update your code so that it has the same scene graph and visual
    appearance provided in the previous step. The three new buttons below the main `ImageView` 
    object are not supposed to function for this checkpoint. 
