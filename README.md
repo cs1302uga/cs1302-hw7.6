@@ -115,8 +115,10 @@ the screenshot provided above. Congratulations on a good looking app!
    need to consult the API documentation for the 
    [`ImageView`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/image/ImageView.html)
    and
-   [`Button`](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/Button.html)
-   classes to determine the appropriate property to change.
+   [`Button`](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/Button.html). We recommend 
+   modifying the `fitHeight` or `fitWidth` property of the `ImageView`. Also, consider setting the `preserveRatio`
+   property as well.
+   
    **Please read all of the bullet points below as well as the recommendations before writing any code.**
 
    * __Increase Size (Enlarge):__
