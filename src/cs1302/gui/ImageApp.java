@@ -12,9 +12,14 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.Image;
 import javafx.scene.layout.Priority;
+import java.io.IOException;
+import java.net.URL;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 
 /**
- * A basic JavaFX 8 program which takes a user specified URL and loads it
+ * A basic JavaFX program which takes a user specified URL and loads it
  * into an {@code ImageView}.
  *
  */
@@ -37,7 +42,6 @@ public class ImageApp extends Application {
     /** Default height and width for Images. */
     private static final int DEF_HEIGHT = 500;
     private static final int DEF_WIDTH = 500;
-
 
     /**
      * Constructs a new {@code ImageApp} object.
@@ -96,14 +100,17 @@ public class ImageApp extends Application {
     /**
      * Students will provide javadoc comments here.
      *
-     * @param e source event
+     * @param event source event
      */
-    private void loadImage(ActionEvent e) {
+    private void loadImage(ActionEvent event) {
         try {
             Image newImg = new Image(url.getText(), DEF_HEIGHT, DEF_WIDTH, false, false);
+            if (newImg.isError()) {
+                throw new IOException(newImg.getException());
+            } // if
             imgView.setImage(newImg);
-        } catch (IllegalArgumentException iae) {
-            System.out.println("The supplied URL is invalid");
+        } catch (IOException | IllegalArgumentException e) {
+            alertError(e);
         } // try
     } // loadImage
 
@@ -113,5 +120,19 @@ public class ImageApp extends Application {
 
         System.out.println("6) Executing the stop method");
     } // stop
+
+    /**
+     * Show a modal error alert based on {@code cause}.
+     * @param cause a {@link java.lang.Throwable Throwable} that caused the alert
+     */
+    public static void alertError(Throwable cause) {
+        TextArea text = new TextArea(cause.toString());
+        text.setEditable(false);
+        Alert alert = new Alert(AlertType.ERROR);
+        alert.getDialogPane().setContent(text);
+        alert.setResizable(true);
+        alert.showAndWait();
+    } // alertError
+
 
 } // ImageApp
