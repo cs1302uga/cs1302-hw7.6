@@ -32,8 +32,7 @@ public class ImageApp extends Application {
     ImageView imgView;
 
     /** A default image which loads when the application starts. */
-    private static final String DEFAULT_IMG =
-        "http://cobweb.cs.uga.edu/~mec/cs1302/gui/default.png";
+    private static final String DEFAULT_IMG = "resources/default.png";
 
     /** Default height and width for Images. */
     private static final int DEF_HEIGHT = 500;
@@ -63,7 +62,7 @@ public class ImageApp extends Application {
         urlLayer.getChildren().addAll(url, loadButton);
         HBox.setHgrow(url, Priority.ALWAYS);
         // load the default image
-        Image defaultImage = new Image(DEFAULT_IMG);
+        Image defaultImage = new Image("file:" + DEFAULT_IMG);
 
         // add the image to the imageview
         imgView.setImage(defaultImage);
