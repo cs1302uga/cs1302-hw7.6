@@ -81,7 +81,7 @@ command depends on your present working directory), then please note that contex
    * The three buttons at the bottom should grow to fill their enclosing `HBox`. Buttons require an
      extra step that was not needed with textfields. To get this to work, make sure you read and 
      understand all of the starter code in the 
-     [`Hbox` Documentation](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/layout/HBox.html)
+     [`Hbox` Documentation](https://openjfx.io/javadoc/17/javafx.graphics/javafx/scene/layout/HBox.html)
    
    * The three `ImageView` objects associated with the `Button` objects 
       via each `Button` object's `graphic` property. 
@@ -114,14 +114,13 @@ the screenshot provided above. Congratulations on a good looking app!
    the functionality listed below to your app. 
 
    You will need to consult the API documentation for the 
-   [`ImageView`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/image/ImageView.html)
+   [`ImageView`](https://openjfx.io/javadoc/17/javafx.graphics/javafx/scene/image/ImageView.html)
    and
-   [`Button`](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/Button.html). 
+   [`Button`](https://openjfx.io/javadoc/17/javafx.controls/javafx/scene/control/Button.html). 
    
    While reading the documentation, carefully consider how the following properties impact an `ImageView`:
-     * [`fitHeight`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/image/ImageView.html#fitHeightProperty)
-     and
-     * [`preserveRatio`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/image/ImageView.html#preserveRatioProperty).
+     * [`fitHeight`](https://openjfx.io/javadoc/17/javafx.graphics/javafx/scene/image/ImageView.html#fitHeightProperty)
+     and [`preserveRatio`](https://openjfx.io/javadoc/17/javafx.graphics/javafx/scene/image/ImageView.html#preserveRatioProperty).
 
    **Please read all of the bullet points below as well as the recommendations before writing any code.**
 
