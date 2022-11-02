@@ -51,7 +51,7 @@ command depends on your present working directory), then please note that contex
 
    <table>
    <tr>
-      <td><img src="http://cobweb.cs.uga.edu/~mec/cs1302/cs1302-ce20-screenshot.png"></td>
+      <td><img src="resources/exampleNewIcons.png" width="382"></td>
       <td><pre><code>            Stage
                  |
                Scene
