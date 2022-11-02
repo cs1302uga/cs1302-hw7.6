@@ -119,8 +119,8 @@ the screenshot provided above. Congratulations on a good looking app!
    classes to determine the appropriate property to change.
    **Please read all of the bullet points below as well as the recommendations before writing any code.**
 
-   * __Zoom In:__
-     The first button (i.e., the one with [`zoom-in-50.png`](resources/zoom-in-50.png))
+   * __Increase Size (Enlarge):__
+     The first button (i.e., the one with [`photo_size_enlarge.png`](resources/photo_size_enlarge.png))
      should _increase_ the size of the main `ImageView` object by some fixed amount.
      
      * If clicking this button causes the size to increase to an amount such that a 
@@ -128,8 +128,8 @@ the screenshot provided above. Congratulations on a good looking app!
        underlying `Image`, then disable the button. If the second button (i.e., for
        zooming out) is disabled, then enable it.
 
-   * __Zoom Out:__
-     The second button (i.e., the one with [`zoom-out-50.png`](resources/zoom-out-50.png))
+   * __Decrease Size (Shrink):__
+     The second button (i.e., the one with [`photo_size_shrink.png`](resources/photo_size_shrink.png))
      should _decrease_ the size of the main `ImageView` object by some fixed amount. 
      
      * If clicking this button causes the size to decrease to an amount such that a 
@@ -138,7 +138,7 @@ the screenshot provided above. Congratulations on a good looking app!
        zooming in) is disabled, then enable it.
 
    * __Actual Size:__
-     The third button (i.e., the one with [`actual-size-50.png`](resources/actual-size-50.png))
+     The third button (i.e., the one with [`photo_size_actual.png`](resources/photo_size_actual.png))
      should return the main `ImageView` object to its default size. This can be accomplished by changing the size 
      of the `ImageView` object to the same size as the `Image` object it displays. 
      
