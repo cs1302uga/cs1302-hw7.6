@@ -24,7 +24,10 @@ import javafx.scene.control.Alert.AlertType;
  *
  */
 public class ImageApp extends Application {
-
+    /** Instance variables for the stage and scene */
+    Stage stage;
+    Scene scene;
+    
     /** The root container for the application scene graph. */
     VBox vbox;
 
@@ -35,7 +38,10 @@ public class ImageApp extends Application {
 
     /** The container for the loaded image. */
     ImageView imgView;
-
+    
+    // Declare instance variables for the components and other shared objects
+    // of your application so that they can be accessed from instance methods
+    
     /** A default image which loads when the application starts. */
     private static final String DEFAULT_IMG = "resources/default.png";
 
@@ -49,7 +55,15 @@ public class ImageApp extends Application {
     public ImageApp() {
         System.out.println("2) Creating an instance of the ImageApp Application");
 
-        // Initialize the instance variables
+        // 1) Setup instance variables for the stage and scene so that we can
+        // access them from other instance methods; an app MUST ONLY construct
+        // a Scene or a Stage object in the start(Stage) method or after the
+        // start(Stage) method is called -- therefore, we will reassign these
+        // later in the start(Stage) method.
+        this.stage = null;
+        this.scene = null;
+        
+        // 2) Construct other nodes/components and objects.
         vbox = new VBox();
         urlLayer = new HBox(8);
         imgView = new ImageView();
@@ -61,17 +75,16 @@ public class ImageApp extends Application {
     public void init() {
         System.out.println("3) Executing the init method");
 
-        // Connect the components in the scene graph
+        // 1) Initialize the expected scene graph / structure.
         vbox.getChildren().addAll(urlLayer, imgView);
         urlLayer.getChildren().addAll(url, loadButton);
         HBox.setHgrow(url, Priority.ALWAYS);
         // load the default image
         Image defaultImage = new Image("file:" + DEFAULT_IMG);
-
         // add the image to the imageview
         imgView.setImage(defaultImage);
-
-        // Create the handler for our button using a lambda expression.
+        
+        // 2) initialize and associate event handlers.
         EventHandler<ActionEvent> mouseClickHandler = (ActionEvent e) -> {
             this.loadImage(e);
         };
@@ -85,10 +98,15 @@ public class ImageApp extends Application {
      * @param stage A reference to the stage object (window) created by the system.
      */
     public void start(Stage stage) {
+        // Add the components to the scene and show the stage.
+        // You may not need to modify this method.
+
         System.out.println("4) Executing the start method");
 
+        this.stage = stage;
+        
         // Add the root of the scene graph to the stage.
-        Scene scene = new Scene(vbox);
+        scene = new Scene(vbox);
 
         // Set up the stage and set it to be visible
         stage.setScene(scene);
@@ -116,7 +134,10 @@ public class ImageApp extends Application {
 
     @Override
     public void stop() {
-        // Won't be used by us. Typically used for application cleanup.
+        // This method is typically used for application cleanup. It is not
+        // needed for this application, but we included it so that you can
+        // see that it does get called as part of the JavaFX application
+        // life-cycle.
 
         System.out.println("6) Executing the stop method");
     } // stop
