@@ -1,6 +1,6 @@
 # cs1302-hw7.6 Fancy ImageApp
 
-![Approved for: Fall 2022](https://img.shields.io/badge/Approved%20for-Fall%202022-darkgreen)
+![Approved for: Spring 2023](https://img.shields.io/badge/Approved%20for-Spring%202023-magenta)
 
 > The artist is the creator of beautiful things.
 > **-- Oscar Wilde, _The Picture of Dorian Gray_**
