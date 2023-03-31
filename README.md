@@ -47,6 +47,9 @@ command depends on your present working directory), then please note that contex
    
 1. Compile and run the code using the provided compile script (`compile.sh`).
 
+1. Enter an invalid URL into the `TextField` and click the load button. The starter code includes a method called `alertError`
+   that displays an error message within an `Alert` window. Take a minute to look over the code in that method.
+
 1. Consider the following screenshot and associated containment heirarchy:
 
    <table>
