@@ -125,6 +125,12 @@ the screenshot provided above. Congratulations on a good looking app!
      * [`fitHeight`](https://openjfx.io/javadoc/17/javafx.graphics/javafx/scene/image/ImageView.html#fitHeightProperty)
      and [`preserveRatio`](https://openjfx.io/javadoc/17/javafx.graphics/javafx/scene/image/ImageView.html#preserveRatioProperty).
 
+   * Here are some URLs to try when testing your program:
+
+     * `http://csweb.cs.uga.edu/~mec/cs1302/gui/pikachu.png`
+     * `http://csweb.cs.uga.edu/~mec/cs1302/gui/brad.jpg`
+     * `http://csweb.cs.uga.edu/~mec/cs1302/gui/SuccessKid.jpg`
+     
    **Please read all of the bullet points below as well as the recommendations before writing any code.**
 
    * __Increase Size (Enlarge):__
