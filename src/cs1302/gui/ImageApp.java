@@ -46,8 +46,8 @@ public class ImageApp extends Application {
     private static final String DEFAULT_IMG = "resources/default.png";
 
     /** Default height and width for Images. */
-    private static final int DEF_HEIGHT = 500;
-    private static final int DEF_WIDTH = 500;
+    private static final int DEF_HEIGHT = 300;
+    private static final int DEF_WIDTH = 300;
 
     /**
      * Constructs a new {@code ImageApp} object.
