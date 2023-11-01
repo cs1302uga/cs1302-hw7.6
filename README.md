@@ -78,7 +78,11 @@ command depends on your present working directory), then please note that contex
    package. The diagram for the scene graph assumes that child nodes
    are added to their parents in a left-to-right order.
    Here are some additional notes:
-   
+
+   * All images will be loaded into the application with a width and height of `300`. Even if the original image
+     is not perfectly square, it will show up that way in the app. This is expected behavior and this functionality
+     is already built into the starter code. You can see this in the call to the `Image` constructor.
+     
    * The text field is expected to grow with its parent `HBox`.
    
    * The three buttons at the bottom should grow to fill their enclosing `HBox`. Buttons require an
