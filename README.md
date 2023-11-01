@@ -1,11 +1,11 @@
 # cs1302-hw7.6 Fancy ImageApp
 
-![Approved for: Spring 2023](https://img.shields.io/badge/Approved%20for-Spring%202023-magenta)
+![Approved for: Fall 2023](https://img.shields.io/badge/Approved%20for-Fall%202023-green)
 
 > The artist is the creator of beautiful things.
 > **-- Oscar Wilde, _The Picture of Dorian Gray_**
 
-This class exercise continues the development a GUI app using the JavaFX library. Students
+This class exercise continues the development of a GUI app using the JavaFX library. Students
 will continue to create an interactive GUI that loads an image from a specified URL and allows
 the user to perform different resizing operations. Construction of this app requires students
 to utilize their knowledge of inheritance, polymorphism, interfaces, and API documentation
@@ -23,10 +23,10 @@ lookup.
 
 ## Questions
 
-In your notes, clearly answer the following questions. These instructions assume that you are 
+Answer the following questions in your notes. These instructions assume that you are 
 logged into the Odin server. 
 
-**NOTE:** If a step requires you to enter in a command, please provide in your notes the full 
+**NOTE:** If a step requires you to enter a command, please provide in your notes the full 
 command that you typed to make the related action happen. If context is necessary (e.g., the 
 command depends on your present working directory), then please note that context as well.
 
@@ -42,7 +42,7 @@ command depends on your present working directory), then please note that contex
 
 ### Checkpoint 1 Steps
 
-1. Execute `tree src` from within the `cs1302-hw7.6` directory you just created to see the provided source files. Then, take a few
+1. Execute `tree src` from within the `cs1302-hw7.6` directory you created to see the provided source files. Then, take a few
    minutes to look through the code and understand what you were given.
    
 1. Compile and run the code using the provided compile script (`compile.sh`).
@@ -50,7 +50,7 @@ command depends on your present working directory), then please note that contex
 1. Enter an invalid URL into the `TextField` and click the load button. The starter code includes a method called `alertError`
    that displays an error message within an `Alert` window. Take a minute to look over the code in that method.
 
-1. Consider the following screenshot and associated containment heirarchy:
+1. Consider the following screenshot and associated containment hierarchy:
 
    <table>
    <tr>
@@ -79,10 +79,10 @@ command depends on your present working directory), then please note that contex
    are added to their parents in a left-to-right order.
    Here are some additional notes:
    
-   * The textfield is expected to grow with its parent `HBox`.
+   * The text field is expected to grow with its parent `HBox`.
    
    * The three buttons at the bottom should grow to fill their enclosing `HBox`. Buttons require an
-     extra step that was not needed with textfields. To get this to work, make sure you read and 
+     extra step that was not needed with text fields. To get this to work, make sure you read and 
      understand all of the starter code in the 
      [`Hbox` Documentation](https://openjfx.io/javadoc/17/javafx.graphics/javafx/scene/layout/HBox.html)
    
@@ -103,7 +103,7 @@ command depends on your present working directory), then please note that contex
    Also, make sure your code passes the `checkstyle` audit, then stage and commit all changes.
 
 If you completed the steps correctly, your app should look similar to
-the screenshot provided above. Congratulations on a good looking app!
+the screenshot provided above. Congratulations on a good-looking app!
    
 <hr/>
 
@@ -156,12 +156,12 @@ the screenshot provided above. Congratulations on a good looking app!
      should return the main `ImageView` object to its default size. This can be accomplished by changing the size 
      of the `ImageView` object to the same size as the `Image` object it displays. 
      
-     * If either of the other buttons (i.e., for increasing / decreasing size) are disabled, 
+     * If either of the other buttons (i.e., for increasing/decreasing size) are disabled, 
        then enable them.
      
    Recommendations:
    
-   * Instead of writing the increase / decrease size logic entirely in separate lambda expressions,
+   * Instead of writing the increase/decrease size logic entirely in separate lambda expressions,
      write a `private` resize method that takes your fixed resize amount as a positive or negative 
      `double` and simply have the lambdas for your event handlers call that method with the
      appropriate value. For example: 
@@ -175,7 +175,7 @@ the screenshot provided above. Congratulations on a good looking app!
      
 If you completed the steps correctly, your app should not only look 
 similar to the screenshot provided above, but it has the desired
-functionality. Congratulations on a good looking, functional app!
+functionality. Congratulations on a good-looking, functional app!
         
 <hr/>
 
@@ -185,7 +185,7 @@ functionality. Congratulations on a good looking, functional app!
 
 ### Submission Steps
 
-**Each student needs to individually submit their own work.**
+**Each student needs to individually submit their work.**
 
 1. Create a plain text file called `SUBMISSION.md` directly inside the `cs1302-javafx`
    directory with the following information:
@@ -199,7 +199,7 @@ functionality. Congratulations on a good looking, functional app!
    ```
 
 1. Change directories to the parent of `cs1302-hw7.6` (e.g., `cd ..` from `cs1302-hw7.6`). If you would like
-   to make a backup tar file, the instructions are in the submissions steps for [hw01](https://github.com/cs1302uga/cs1302-hw01).
+   to make a backup tar file, the instructions are in the submission steps for [hw01](https://github.com/cs1302uga/cs1302-hw01).
    We won't repeat those steps here and you can view them as optional.
    
 1. Use the `submit` command to submit this exercise to `csci-1302`:
