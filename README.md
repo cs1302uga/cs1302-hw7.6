@@ -123,8 +123,15 @@ the screenshot provided above. Congratulations on a good-looking app!
    
    While reading the documentation, carefully consider how the following properties impact an `ImageView`:
      * [`fitHeight`](https://openjfx.io/javadoc/17/javafx.graphics/javafx/scene/image/ImageView.html#fitHeightProperty)
-     and [`preserveRatio`](https://openjfx.io/javadoc/17/javafx.graphics/javafx/scene/image/ImageView.html#preserveRatioProperty).
+     * [`fitWidth`](https://openjfx.io/javadoc/17/javafx.graphics/javafx/scene/image/ImageView.html#fitWidthProperty)
+     * [`preserveRatio`](https://openjfx.io/javadoc/17/javafx.graphics/javafx/scene/image/ImageView.html#preserveRatioProperty).
 
+   * After creating the `ImageView` object, you will need to set the `preserveRatio` property to `true` and set both the
+     `fitWidth` and `fitHeight` properties to match the width and height of the default image (found in the `resources` folder).
+
+   * When resizing the image view, you should update the `fitWidth` and `fitHeight` properties of the image view by a fixed amount (discussed
+     in more detail below). You should not modify the width/height of the image.
+     
    * Here are some URLs to try when testing your program:
 
      * `http://csweb.cs.uga.edu/~mec/cs1302/gui/pikachu.png`
