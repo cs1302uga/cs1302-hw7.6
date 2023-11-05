@@ -198,7 +198,7 @@ functionality. Congratulations on a good-looking, functional app!
 
 **Each student needs to individually submit their work.**
 
-1. Create a plain text file called `SUBMISSION.md` directly inside the `cs1302-javafx`
+1. Create a plain text file called `SUBMISSION.md` directly inside the `cs1302-hw7.6`
    directory with the following information:
 
    1. Your name and UGA ID number
