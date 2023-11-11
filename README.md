@@ -89,7 +89,7 @@ command depends on your present working directory), then please note that contex
      understand all of the starter code in the 
      [`Hbox` Documentation](https://openjfx.io/javadoc/17/javafx.graphics/javafx/scene/layout/HBox.html).
    
-   * The three `ImageView` objects associated with the `Button` objects 
+   * The three `ImageView` objects are associated with the `Button` objects 
       via each `Button` object's `graphic` property. 
 
    * The icons for the associated images are contained in the `resources` directory 
