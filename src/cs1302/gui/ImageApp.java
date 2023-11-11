@@ -24,7 +24,7 @@ import javafx.scene.control.Alert.AlertType;
  *
  */
 public class ImageApp extends Application {
-    /** Instance variables for the stage and scene */
+    /** Instance variables for the stage and scene. */
     Stage stage;
     Scene scene;
     
