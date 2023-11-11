@@ -98,7 +98,6 @@ command depends on your present working directory), then please note that contex
      if resources is in the present working directory when the app is run. There is an example
      of this in the `init` method in the starter code. There, we initialize the default image
      from the `resources` directory.
-
      
 1. Update your code so that it has the same scene graph and visual
    appearance provided in the previous step. The three new buttons below the main `ImageView` 
