@@ -3,13 +3,12 @@
 ![Approved for: Fall 2023](https://img.shields.io/badge/Approved%20for-Fall%202023-green)
 
 > The artist is the creator of beautiful things.
-> **-- Oscar Wilde, _The Picture of Dorian Gray_**
+> **— Oscar Wilde, _The Picture of Dorian Gray_**
 
 This class exercise continues the development of a GUI app using the JavaFX library. Students
 will continue to create an interactive GUI that loads an image from a specified URL and allows
 the user to perform different resizing operations. Construction of this app requires students
-to utilize their knowledge of inheritance, polymorphism, interfaces, and API documentation
-lookup.
+to utilize API documentation and their knowledge of inheritance, polymorphism, and interfaces.
 
 ## Course-Specific Learning Outcomes
 
@@ -83,23 +82,23 @@ command depends on your present working directory), then please note that contex
      is not perfectly square, it will show up that way in the app. This is expected behavior and this functionality
      is already built into the starter code. You can see this in the call to the `Image` constructor.
      
-   * The text field is expected to grow with its parent `HBox`.
+   * The text field will already grow with its parent `HBox`.
    
    * The three buttons at the bottom should grow to fill their enclosing `HBox`. Buttons require an
      extra step that was not needed with text fields. To get this to work, make sure you read and 
      understand all of the starter code in the 
-     [`Hbox` Documentation](https://openjfx.io/javadoc/17/javafx.graphics/javafx/scene/layout/HBox.html)
+     [`Hbox` Documentation](https://openjfx.io/javadoc/17/javafx.graphics/javafx/scene/layout/HBox.html).
    
    * The three `ImageView` objects associated with the `Button` objects 
       via each `Button` object's `graphic` property. 
 
    * The icons for the associated images are contained in the `resources` directory 
      provided with this exercise. To use these local files in your `ImageView`, you
-     can use a relative `file:` URL, e.g., `file:resources/image.png` -- this will only work
+     can use a relative `file:` URL, e.g., `file:resources/image.png` — this will only work
      if resources is in the present working directory when the app is run. There is an example
      of this in the `init` method in the starter code. There, we initialize the default image
      from the `resources` directory.
-             
+     
 1. Update your code so that it has the same scene graph and visual
    appearance provided in the previous step. The three new buttons below the main `ImageView` 
    object are not supposed to function for this checkpoint. 
@@ -133,7 +132,7 @@ the screenshot provided above. Congratulations on a good-looking app!
    * After creating the `ImageView` object, you will need to set the `preserveRatio` property to `true` and set both the
      `fitWidth` and `fitHeight` properties to match the width and height of the default image (found in the `resources` folder).
 
-   * When resizing the image view, you should update the `fitWidth` and `fitHeight` properties of the image view by a fixed amount (discussed
+   * When resizing the image view, you should update the `fitWidth` and `fitHeight` properties of the `ImageView` by a fixed amount (discussed
      in more detail below). You should not modify the width/height of the image.
      
    * Here are some URLs to try when testing your program:
@@ -150,8 +149,8 @@ the screenshot provided above. Congratulations on a good-looking app!
      
      * If clicking this button causes the size to increase to an amount such that a 
        subsequent click would cause the `ImageView` size to exceed twice the size of the 
-       underlying `Image`, then disable the button. If the second button (i.e., for
-       decreasing size) is disabled, then enable it.
+       underlying `Image`, then disable the button.
+     * If the second button (i.e., the one for decreasing size) is disabled, then enable it.
 
    * __Decrease Size (Shrink):__
      The second button (i.e., the one with [`photo_size_shrink.png`](resources/photo_size_shrink.png))
@@ -159,15 +158,15 @@ the screenshot provided above. Congratulations on a good-looking app!
      
      * If clicking this button causes the size to decrease to an amount such that a 
        subsequent click would cause the `ImageView` size to become negative, then 
-       disable the button. If the first button (i.e., for
-       increasing size) is disabled, then enable it.
+       disable the button.
+     * If the first button (i.e., the one for increasing size) is disabled, then enable it.
 
    * __Actual Size:__
      The third button (i.e., the one with [`photo_size_actual.png`](resources/photo_size_actual.png))
      should return the main `ImageView` object to its default size. This can be accomplished by changing the size 
      of the `ImageView` object to the same size as the `Image` object it displays. 
      
-     * If either of the other buttons (i.e., for increasing/decreasing size) are disabled, 
+     * If either of the other buttons (for increasing/decreasing size) are disabled, 
        then enable them.
      
    Recommendations:
@@ -210,7 +209,7 @@ functionality. Congratulations on a good-looking, functional app!
    ```
 
 1. Change directories to the parent of `cs1302-hw7.6` (e.g., `cd ..` from `cs1302-hw7.6`). If you would like
-   to make a backup tar file, the instructions are in the submission steps for [hw01](https://github.com/cs1302uga/cs1302-hw01).
+   to make a backup `.tar` file, the instructions are in the submission steps for [hw01](https://github.com/cs1302uga/cs1302-hw01).
    We won't repeat those steps here and you can view them as optional.
    
 1. Use the `submit` command to submit this exercise to `csci-1302`:
@@ -221,8 +220,8 @@ functionality. Congratulations on a good-looking, functional app!
    
    Read the output of the submit command very carefully. If there is an error while submitting, then it will displayed 
    in that output. Additionally, if successful, the `submit` command creates a new receipt file in the directory you 
-   submitted. The receipt file begins with rec and contains a detailed list of all files that were successfully submitted. 
-   Look through the contents of the rec file and always remember to keep that file in case there is an issue with your submission.
+   submitted. The receipt file begins with "rec" and contains a detailed list of all files that were successfully submitted. 
+   Look through the contents of the receipt file and always remember to keep that file in case there is an issue with your submission.
 
    **Note:** You must be on Odin to submit.
 
