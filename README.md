@@ -82,7 +82,7 @@ command depends on your present working directory), then please note that contex
      is not perfectly square, it will show up that way in the app. This is expected behavior and this functionality
      is already built into the starter code. You can see this in the call to the `Image` constructor.
      
-   * The text field will already grow with its parent `HBox`.
+   * The text field will already grow with its parent `HBox` in the starter code.
    
    * The three buttons at the bottom should grow to fill their enclosing `HBox`. Buttons require an
      extra step that was not needed with text fields. To get this to work, make sure you read and 
