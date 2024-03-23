@@ -1,6 +1,6 @@
 # cs1302-hw7.6 Fancy ImageApp
 
-![Approved for: Fall 2023](https://img.shields.io/badge/Approved%20for-Fall%202023-green)
+![Approved for: Spring 2024](https://img.shields.io/badge/Approved%20for-Spring%202024-blue)
 
 > The artist is the creator of beautiful things.
 > **— Oscar Wilde, _The Picture of Dorian Gray_**
@@ -95,7 +95,7 @@ command depends on your present working directory), then please note that contex
    * The icons for the associated images are contained in the `resources` directory 
      provided with this exercise. To use these local files in your `ImageView`, you
      can use a relative `file:` URL, e.g., `file:resources/image.png` — this will only work
-     if resources is in the present working directory when the app is run. There is an example
+     if the `resources` directory is in the present working directory when the app is run. There is an example
      of this in the `init` method in the starter code. There, we initialize the default image
      from the `resources` directory.
      
