@@ -157,8 +157,8 @@ the screenshot provided above. Congratulations on a good-looking app!
      should _decrease_ the size of the main `ImageView` object by some fixed amount. 
      
      * If clicking this button causes the size to decrease to an amount such that a 
-       subsequent click would cause the `ImageView` size to become negative, then 
-       disable the button.
+       subsequent click would cause the `ImageView` size to become zero (or negative), then 
+       disable the button. In other words, do not let the size of the `ImageView` reach zero (or less).
      * If the first button (i.e., the one for increasing size) is disabled, then enable it.
 
    * __Actual Size:__
