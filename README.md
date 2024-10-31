@@ -1,6 +1,6 @@
 # cs1302-hw7.6 Fancy ImageApp
 
-![Approved for: Spring 2024](https://img.shields.io/badge/Approved%20for-Spring%202024-blue)
+![Approved for: Fall 2024](https://img.shields.io/badge/Approved%20for-Fall%202024-green)
 
 > The artist is the creator of beautiful things.
 > **— Oscar Wilde, _The Picture of Dorian Gray_**
@@ -16,8 +16,8 @@ to utilize API documentation and their knowledge of inheritance, polymorphism, a
 * **LO7.a:** (Partial) Design and implement a graphical user interface in a software project.
 
 ## References and Prerequisites
-* [CSCI 1302 JavaFX Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/javafx/javafx.md)
-* [JavaFX Bookmarks](https://github.com/cs1302uga/cs1302-tutorials/blob/master/javafx/javafx-bookmarks.md)
+* [CSCI 1302 JavaFX Chapter](https://cs1302uga.github.io/cs1302-book/java/javafx/javafx-index.html)
+* [JavaFX Bookmarks](https://cs1302uga.github.io/cs1302-book/java/javafx/bookmarks.html)
 * [JavaFX API Documentation](https://openjfx.io/javadoc/17/)
 
 ## Questions
@@ -150,7 +150,7 @@ the screenshot provided above. Congratulations on a good-looking app!
      * If clicking this button causes the size to increase to an amount such that a 
        subsequent click would cause the `ImageView` size to exceed twice the size of the 
        underlying `Image`, then disable the button.
-     * If the second button (i.e., the one for decreasing size) is disabled, then enable it.
+     * If the second button (i.e., the one for decreasing size) is disabled, enable it.
 
    * __Decrease Size (Shrink):__
      The second button (i.e., the one with [`photo_size_shrink.png`](resources/photo_size_shrink.png))
@@ -159,7 +159,7 @@ the screenshot provided above. Congratulations on a good-looking app!
      * If clicking this button causes the size to decrease to an amount such that a 
        subsequent click would cause the `ImageView` size to become zero (or negative), then 
        disable the button. In other words, do not let the size of the `ImageView` reach zero (or less).
-     * If the first button (i.e., the one for increasing size) is disabled, then enable it.
+     * If the first button (i.e., the one for increasing size) is disabled, enable it.
 
    * __Actual Size:__
      The third button (i.e., the one with [`photo_size_actual.png`](resources/photo_size_actual.png))
