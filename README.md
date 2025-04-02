@@ -7,7 +7,7 @@
 
 This class exercise continues the development of a GUI app using the JavaFX library. Students
 will continue to create an interactive GUI that loads an image from a specified URL and allows
-the user to perform different resizing operations. Construction of this app requires students
+the user to perform different resizing operations. The construction of this app requires students
 to utilize API documentation and their knowledge of inheritance, polymorphism, and interfaces.
 
 ## Course-Specific Learning Outcomes
@@ -135,7 +135,7 @@ the screenshot provided above. Congratulations on a good-looking app!
    * When resizing the image view, you should update the `fitWidth` and `fitHeight` properties of the `ImageView` by a fixed amount (discussed
      in more detail below). You should not modify the width/height of the image.
      
-   * Here are some URLs to try when testing your program:
+   * Here are some URLs to try when testing your program (**note:** You should use the `http://` addresses below instead of `https://`):
 
      * `http://csweb.cs.uga.edu/~mec/cs1302/gui/pikachu.png`
      * `http://csweb.cs.uga.edu/~mec/cs1302/gui/brad.jpg`
